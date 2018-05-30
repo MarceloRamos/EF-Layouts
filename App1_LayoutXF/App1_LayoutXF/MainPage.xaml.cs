@@ -13,5 +13,30 @@ namespace App1_LayoutXF
 		{
 			InitializeComponent();
 		}
-	}
+
+        public void GoAbsolutePage(Object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Layouts.Absolute.AbsolutePage());
+        }
+
+        public void GoGridPage(Object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Layouts.Grid.GridPage());
+        }
+
+        public void GoRelativePage(Object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Layouts.Relative.RelativePage());
+        }
+
+        public void GoScrollPage(Object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Layouts.Scroll.ScrollPage());
+        }
+
+        public void GoStackPage(Object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new Layouts.Stack.StackPage());
+        }
+    }
 }

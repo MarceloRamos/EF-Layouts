@@ -6,9 +6,16 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
+    	<Label Text="Trabalhando comLayouts" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+
+        <Button Text="Absolute" Clicked="GoAbsolutePage"></Button>
+        <Button Text="Grid" Clicked="GoGridPage"></Button>
+        <Button Text="Relative" Clicked="GoRelativePage"></Button>
+        <Button Text="Scroll" Clicked="GoScrollPage"></Button>
+        <Button Text="Stack" Clicked="GoStackPage"></Button>
+        
     </StackLayout>
 
 </ContentPage>
